@@ -13,7 +13,7 @@ def oxford_comma(array)
     return array.join(" and ")
   elsif array.length > 2
     last_element = array.pop  #take of last element 
-     
+    array.join(", ") << ", and #{last_element}" 
   else 
     return array.join() 
   end 
